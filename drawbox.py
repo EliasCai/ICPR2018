@@ -6,7 +6,7 @@ import pandas as pd
 from PIL import Image, ImageDraw
 
 
-def draw_boxes():
+def draw_boxes(path):
     
     file_pic = '\\image_1000\\TB1..FLLXXXXXbCXpXXunYpLFXX.jpg' # 图片的地址
     file_text = '\\txt_1000\\TB1..FLLXXXXXbCXpXXunYpLFXX.txt' # 描述文件的地址
@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
     path = 'D:\\datastore\\1802tianchi\\ICPR_text_train_part1_20180211' # 文件夹地址
 
-    img = draw_boxes()
+    img = draw_boxes(path)
     img.save(path + '\\demo.jpg')
     img.show()
     
